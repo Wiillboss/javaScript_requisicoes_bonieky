@@ -4,6 +4,11 @@
 // Promise = Promessa (objeto)
 // callback esta depois dos thens
 
+// https://jsonplaceholder.typicode.com/posts URL correta, erre alguma coisa na requisição do fetch para fazer os testes da aula 
+// catch é para ser execultado quando algo der errado
+// usar o ERRO como parametro do catch informa qual o erro 
+// finally é quando deu certo 
+
 function clicou(){
     fetch('https://jsonplaceholder.typicode.com/posts')
         .then((response) => {
@@ -13,13 +18,16 @@ function clicou(){
             console.log(`Titulo do primeiro post no console: ${json[0].title}`);
             alert(`Titulo do primeiro post no alert: ${json[0].title}`);
             // exibindo no console e no alert o titulo do array na posição zero
+        })
+        .catch((error) =>{
+            console.log("Deu problmea!");
+            console.log(error);
+            alert(`Deu prooblema na requisição.
+                Segue o erro. ${error}.`);
+        })
+        .finally(() => {
+            alert("Opa, acacou tudo");
         });
-    alert("Opa, clicou");
-}
-
-//função abaixo feito para apenas explicar um detalhe da aula.
-function somar(x,y){
-        return x + y;
 }
 
 document.querySelector('#botao').addEventListener('click', clicou);
