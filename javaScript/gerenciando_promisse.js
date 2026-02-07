@@ -1,6 +1,6 @@
 // fetch é uma função do JV para fazer requisições.
 // toda função fetch retornar uma promise (algo que vai acontecer no futuro)
-// then é como se fosse um E ENTÂO faco alguma coisa.
+// then é como se fosse um E ENTÂO faco alguma coisa - resposta da promessa.
 // Promise = Promessa (objeto)
 // callback esta depois dos thens
 

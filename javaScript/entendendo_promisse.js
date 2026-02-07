@@ -1,4 +1,4 @@
-// Promise = Promessa
+// Promise = Promessa é ASSINCRONA
 function clicou(){
     let req = fetch('https://jsonplaceholder.typicode.com/posts');
     
