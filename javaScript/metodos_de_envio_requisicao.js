@@ -37,13 +37,13 @@ function inserir() {
                 userId: 2
             })
         }
-    )
-    .then((response) => {
+        )
+        .then((response) => {
         return response.json();
-    })
-    .then((json) => {
+        })
+        .then((json) => {
         console.log(json);
-    });
+        });
 }
 
 
